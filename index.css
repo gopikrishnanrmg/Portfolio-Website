@@ -1,0 +1,55 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    /* margin: 0; */
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(117,8,133,1) 50%, rgba(0,212,255,1) 100%);
+}
+
+/* .navbar-nav li a {
+    color: white;
+  }   */
+
+  #section1 *, #section2 *, #section3 *  {
+    color: white;
+  }
+  
+  #section1-header {
+    align-items: center;
+  }
+
+  #profile-card * {
+    color: black;
+  }
+
+  #profile-img {
+    max-width: 100%; 
+    max-height: 100%;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+  }
+
+
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: grey;
+  }
+
+  
+  .navbar-light .navbar-brand {
+    color: white;
+  }
+
+  /* Hide all sections except for the active one */
+/* section:not(.active) {
+    display: none;
+  } */
+  
+  
