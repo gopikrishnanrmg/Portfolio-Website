@@ -47,6 +47,10 @@ body {
     color: white;
   }
 
+  .proj-card {
+    color: black !important;
+  }
+
   /* Hide all sections except for the active one */
 /* section:not(.active) {
     display: none;
