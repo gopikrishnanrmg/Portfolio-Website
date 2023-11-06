@@ -56,4 +56,11 @@ body {
     display: none;
   } */
   
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+  }
   
