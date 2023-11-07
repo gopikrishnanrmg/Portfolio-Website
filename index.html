@@ -4,11 +4,20 @@
     <meta charset="utf-8" />
     <title>Website</title>
     <link rel="stylesheet" href="index.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body data-spy="scroll" data-target="#navbar" data-offset="50">
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/index.js"></script>
 
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
@@ -47,11 +56,12 @@
           <section id="section1">
             <div class="container-fluid d-flex flex-column vh-100">
               <div class="row">
-                <h1 class="col text-center">Who am I?</h1>
+                <h1 class="col text-center hello"></h1>
               </div>
               <div class="row justify-content-center align-items-center h-100">
-                <div class="col mx-auto d-flex">
-                  <div class="card" id="profile-card">
+                <div class="col mx-auto">
+                  <!-- <div class="col mx-auto d-flex"> -->
+                  <!-- <div class="card" id="profile-card">
                     <div class="card-body">
                       <h5 class="card-title text-center">Gopikrishnan Rajeev</h5>
                       <p class="card-text text-center">
@@ -59,8 +69,39 @@
                       </p>
                       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player class="mx-auto" src="https://lottie.host/5989a657-6c2c-4847-91aa-940a43216df7/uiNzJ35S3l.json" background="##FFFFFF" speed="1" style="width: 50%; height: 50%" loop autoplay direction="1" mode="normal"></lottie-player>
                     </div>
+                  </div> -->
+                  <div id="profile-data">
+                    <h1>Gopikrishnan Rajeev</h1>
+                    <br />
+                    <h4>Software Engineer</h4>
+                    <br />
+                    <h5 class="text-danger">
+                      Innovation. Learning. Engineering. Creation.
+                    </h5>
+                    <p>
+                      Engineering solutions to
+                      solve problems is what I crave for. I love experimenting
+                      with different technologies and expanding my knowledge as
+                      I go. The part I enjoy the most while engineering
+                      solutions is the learning that goes hand-in-hand with
+                      solving problems. Feel free to connect with me on
+                      LinkedIn.<br /><br />
+                    </p>
+                  </div>
+                  <div id="social-data">
+                    <img
+                      class="img-responsive social-data-icons"
+                      src="public\images\github-outline-svgrepo-com.svg"
+                      alt="Card image cap"
+                    />
+                    <img
+                      class="img-responsive social-data-icons"
+                      src="public\images\linkedin-svgrepo-com.svg"
+                      alt="Card image cap"
+                    />
                   </div>
                 </div>
+
                 <div class="col mx-auto">
                   <img
                     src="https://www.fairtravel4u.org/wp-content/uploads/2018/06/sample-profile-pic.png"
@@ -85,94 +126,175 @@
               <div class="row">
                 <div class="col-md-3 mb-3">
                   <div class="card">
-                    <img class="card-img-top mx-auto" src="public\images\ubuntu-svgrepo-com.svg" alt="Card image cap">
-                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                    <img
+                      class="card-img-top mx-auto"
+                      src="public\images\ubuntu-svgrepo-com.svg"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="card-body d-flex justify-content-center align-items-center flex-column"
+                    >
                       <h5 class="card-title proj-card">Ubuntu Touch Port</h5>
-                      <p class="card-text proj-card text-center">Project to port Ubuntu-Touch to the Xiaomi Redmi note 4. The port received 10000+ downloads</p>
+                      <p class="card-text proj-card text-center">
+                        Project to port Ubuntu-Touch to the Xiaomi Redmi note 4.
+                        The port received 10000+ downloads
+                      </p>
                       <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3 mb-3">
                   <div class="card">
-                    <img class="card-img-top mx-auto" src="public\images\arduino-svgrepo-com.svg" alt="Card image cap">
-                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                    <img
+                      class="card-img-top mx-auto"
+                      src="public\images\arduino-svgrepo-com.svg"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="card-body d-flex justify-content-center align-items-center flex-column"
+                    >
                       <h5 class="card-title proj-card">Ubuntu Touch Port</h5>
-                      <p class="card-text proj-card text-center">Project to port Ubuntu-Touch to the Xiaomi Redmi note 4. The port received 10000+ downloads</p>
+                      <p class="card-text proj-card text-center">
+                        Project to port Ubuntu-Touch to the Xiaomi Redmi note 4.
+                        The port received 10000+ downloads
+                      </p>
                       <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3 mb-3">
                   <div class="card">
-                    <img class="card-img-top mx-auto" src="public\images\java-svgrepo-com.svg" alt="Card image cap">
-                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                    <img
+                      class="card-img-top mx-auto"
+                      src="public\images\java-svgrepo-com.svg"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="card-body d-flex justify-content-center align-items-center flex-column"
+                    >
                       <h5 class="card-title proj-card">Ubuntu Touch Port</h5>
-                      <p class="card-text proj-card text-center">Project to port Ubuntu-Touch to the Xiaomi Redmi note 4. The port received 10000+ downloads</p>
+                      <p class="card-text proj-card text-center">
+                        Project to port Ubuntu-Touch to the Xiaomi Redmi note 4.
+                        The port received 10000+ downloads
+                      </p>
                       <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3 mb-3">
                   <div class="card">
-                    <img class="card-img-top mx-auto" src="public\images\network-security-svgrepo-com.svg" alt="Card image cap">
-                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                    <img
+                      class="card-img-top mx-auto"
+                      src="public\images\network-security-svgrepo-com.svg"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="card-body d-flex justify-content-center align-items-center flex-column"
+                    >
                       <h5 class="card-title proj-card">Ubuntu Touch Port</h5>
-                      <p class="card-text proj-card text-center">Project to port Ubuntu-Touch to the Xiaomi Redmi note 4. The port received 10000+ downloads</p>
+                      <p class="card-text proj-card text-center">
+                        Project to port Ubuntu-Touch to the Xiaomi Redmi note 4.
+                        The port received 10000+ downloads
+                      </p>
                       <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3 mb-3">
                   <div class="card">
-                    <img class="card-img-top mx-auto" src="public\images\icons8-blockchain.svg" alt="Card image cap">
-                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                    <img
+                      class="card-img-top mx-auto"
+                      src="public\images\icons8-blockchain.svg"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="card-body d-flex justify-content-center align-items-center flex-column"
+                    >
                       <h5 class="card-title proj-card">Ubuntu Touch Port</h5>
-                      <p class="card-text proj-card text-center">Project to port Ubuntu-Touch to the Xiaomi Redmi note 4. The port received 10000+ downloads</p>
+                      <p class="card-text proj-card text-center">
+                        Project to port Ubuntu-Touch to the Xiaomi Redmi note 4.
+                        The port received 10000+ downloads
+                      </p>
                       <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                   </div>
-                </div>          
+                </div>
                 <div class="col-md-3 mb-3">
                   <div class="card">
-                    <img class="card-img-top mx-auto" src="public\images\database-svgrepo-com.svg" alt="Card image cap">
-                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                    <img
+                      class="card-img-top mx-auto"
+                      src="public\images\database-svgrepo-com.svg"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="card-body d-flex justify-content-center align-items-center flex-column"
+                    >
                       <h5 class="card-title proj-card">Ubuntu Touch Port</h5>
-                      <p class="card-text proj-card text-center">Project to port Ubuntu-Touch to the Xiaomi Redmi note 4. The port received 10000+ downloads</p>
+                      <p class="card-text proj-card text-center">
+                        Project to port Ubuntu-Touch to the Xiaomi Redmi note 4.
+                        The port received 10000+ downloads
+                      </p>
                       <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                   </div>
-                </div>          
+                </div>
                 <div class="col-md-3 mb-3">
                   <div class="card">
-                    <img class="card-img-top mx-auto" src="public\images\svg-edited.svg" alt="Card image cap">
-                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                    <img
+                      class="card-img-top mx-auto"
+                      src="public\images\svg-edited.svg"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="card-body d-flex justify-content-center align-items-center flex-column"
+                    >
                       <h5 class="card-title proj-card">Ubuntu Touch Port</h5>
-                      <p class="card-text proj-card text-center">Project to port Ubuntu-Touch to the Xiaomi Redmi note 4. The port received 10000+ downloads</p>
+                      <p class="card-text proj-card text-center">
+                        Project to port Ubuntu-Touch to the Xiaomi Redmi note 4.
+                        The port received 10000+ downloads
+                      </p>
                       <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                   </div>
-                </div>          
+                </div>
                 <div class="col-md-3 mb-3">
                   <div class="card">
-                    <img class="card-img-top mx-auto" src="public\images\search-engine-web-site-svgrepo-com.svg" alt="Card image cap">
-                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                    <img
+                      class="card-img-top mx-auto"
+                      src="public\images\search-engine-web-site-svgrepo-com.svg"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="card-body d-flex justify-content-center align-items-center flex-column"
+                    >
                       <h5 class="card-title proj-card">Ubuntu Touch Port</h5>
-                      <p class="card-text proj-card text-center">Project to port Ubuntu-Touch to the Xiaomi Redmi note 4. The port received 10000+ downloads</p>
+                      <p class="card-text proj-card text-center">
+                        Project to port Ubuntu-Touch to the Xiaomi Redmi note 4.
+                        The port received 10000+ downloads
+                      </p>
                       <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                   </div>
-                </div>       
+                </div>
                 <div class="col-md-3 mb-3">
                   <div class="card">
-                    <img class="card-img-top mx-auto" src="public\images\Resized_svg.svg" alt="Card image cap">
-                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                    <img
+                      class="card-img-top mx-auto"
+                      src="public\images\Resized_svg.svg"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="card-body d-flex justify-content-center align-items-center flex-column"
+                    >
                       <h5 class="card-title proj-card">Ubuntu Touch Port</h5>
-                      <p class="card-text proj-card text-center">Project to port Ubuntu-Touch to the Xiaomi Redmi note 4. The port received 10000+ downloads</p>
+                      <p class="card-text proj-card text-center">
+                        Project to port Ubuntu-Touch to the Xiaomi Redmi note 4.
+                        The port received 10000+ downloads
+                      </p>
                       <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                   </div>
-                </div>               
+                </div>
               </div>
             </div>
           </section>
