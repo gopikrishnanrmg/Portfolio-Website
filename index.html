@@ -15,9 +15,10 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="/main.js"></script>
+    <script type="module" src="/index.js"></script>
   </head>
   <body data-spy="scroll" data-target="#navbar" data-offset="50">
-    <script type="module" src="/index.js"></script>
 
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
@@ -47,6 +48,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#section4">Skills/Tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section5">Console</a>
             </li>
           </ul>
         </div>
@@ -298,7 +302,7 @@
             <h1 class="mb-5">Work/Experience</h1>
             <div class="container-fluid">
               <div class="row">
-                <h2 class="col text-center mb-5">My current experience is defined by</h2>
+                <h2 class="col text-center mb-5">My current experience can be defined as</h2>
               </div>
               <div class="row">
                 <div class="col border-end border-white">
@@ -370,6 +374,20 @@
                 <div class="col">
                   <h3 class="text-center">20%</h3>
                 </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-12">
+          <section id="section4" class="mb-5">
+            <h1 class="mb-5">Console</h1>
+            <div class="container-fluid">
+              <div class="row d-flex justify-content-center align-items-center">
+                <div id="console" onclick="this.contentEditable='true';" onkeydown="checkKeyPress(event)">user@dedsec$</div>
               </div>
             </div>
           </section>

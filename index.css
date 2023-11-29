@@ -79,8 +79,8 @@ body {
 }
 
 .social-data-icons {
-  width: 8%;
-  height: 8%;
+  width: 7%;
+  height: 7%;
 }
 
 #profile-data {
@@ -91,4 +91,10 @@ body {
 #social-data {
   width: auto;
   height: 25%;
+}
+
+#console {
+  background-color: black;
+  width: 50%;
+  height: 50%;
 }

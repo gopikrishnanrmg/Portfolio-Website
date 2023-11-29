@@ -22,3 +22,23 @@
 // 	renderer.render( scene, camera );
 // }
 // animate();
+
+const path = [{level:0,name:"/user/dedsec",children:["Documents","Downloads","Pictures","Music", "Gopikrishnan"],}]
+
+var contentPreserveLen = 12;
+var curPrompt = "user@dedsec$";
+
+function checkKeyPress(event) {
+    if (window.getSelection().getRangeAt(0).startOffset < contentPreserveLen || (window.getSelection().getRangeAt(0).startOffset === contentPreserveLen && event.keyCode === 8))
+        event.preventDefault();
+
+    // console.log(document.getElementById("console").innerText.length+" "+event.keyCode)
+    // if (event.keyCode === 8 && window.getSelection().getRangeAt(0).startOffset <= promptLen) {
+    //     event.preventDefault();
+    // }
+  
+    if (event.keyCode === 13) {
+        var command = document.getElementById("console").innerText.substring(contentPreserveLen);
+        alert(command);
+    }
+  }
