@@ -23,10 +23,37 @@
 // }
 // animate();
 
-const path = [{level:0,name:"/user/dedsec",children:["Documents","Downloads","Pictures","Music", "Gopikrishnan"],}]
 
-var contentPreserveLen = 12;
-var curPrompt = "user@dedsec$";
+
+const path = [{level:0,name:"/user/dedsec",children:["Gopikrishnan"], type:0}, 
+{level:1,name:"Gopikrishnan",children:["into.txt"], type:1}];
+
+var contentPreserveLen = 14;
+var curPrompt = "user@dedsec:~$";
+
+function printToScreen(string){
+    var currentContent = document.getElementById("console").innerText;
+    currentContent+=string+"\n"+curPrompt;
+    contentPreserveLen = currentContent.length;
+    document.getElementById("console").innerText = currentContent;
+}
+
+function resolveCommand(cmd){
+    switch(cmd){
+        case "cd":
+            break;
+        case "pwd":
+            break;
+        case "ls":
+            break;
+         case "touch":
+            break;
+        case "mkdir":
+            break;
+        case "cd":
+            break;           
+    }
+}
 
 function checkKeyPress(event) {
     if (window.getSelection().getRangeAt(0).startOffset < contentPreserveLen || (window.getSelection().getRangeAt(0).startOffset === contentPreserveLen && event.keyCode === 8))
