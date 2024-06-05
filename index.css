@@ -21,10 +21,10 @@ body {
     color: white;
   }   */
 
-#section1 *,
-#section2 *,
-#section3 *,
-#section4 * {
+#introduction *,
+#experience *,
+#skills *,
+#projects * {
   color: white;
 }
 
