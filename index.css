@@ -41,6 +41,10 @@ body {
   max-height: 100%;
 }
 
+#github {
+  text-decoration: none;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: white;
 }
